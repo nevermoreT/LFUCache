@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$	tags	/^LFUCache	LFUCacheImpl.h	\/^typedef struct LFUCache{$\/;"	s$/;"	m	struct:cacheEntryS::__anon1	file:	access:public
+$	tags	/^cacheEntryS	LFUCacheImpl.h	\/^typedef struct cacheEntryS{$\/;"	s$/;"	m	struct:cacheEntryS	file:	access:public
+CreateLFUCache	LFUCacheImpl.c	/^int CreateLFUCache(int capacity,void **lfuCache)$/;"	f	signature:(int capacity,void **lfuCache)
+HANDLE_ERROR	main.c	10;"	d	file:
+LFUCACHE_GETDATA	main.c	23;"	d	file:
+LFUCACHE_PUTDATA	main.c	14;"	d	file:
+LFUCache	LFUCacheImpl.h	/^typedef struct LFUCache{$/;"	s
+LFUCache	LFUCacheImpl.h	/^}LFUCache;$/;"	t	typeref:struct:LFUCache
+LFUCache::cacheCapacity	LFUCacheImpl.h	/^	int cacheCapacity;$/;"	m	struct:LFUCache	access:public
+LFUCache::hashmap	LFUCacheImpl.h	/^	cacheEntryS **hashmap;$/;"	m	struct:LFUCache	access:public
+LFUCache::lfuListHead	LFUCacheImpl.h	/^	cacheEntryS *lfuListHead;$/;"	m	struct:LFUCache	access:public
+LFUCache::lfuListSize	LFUCacheImpl.h	/^	int lfuListSize;$/;"	m	struct:LFUCache	access:public
+LFUCache::lfuListTail	LFUCacheImpl.h	/^	cacheEntryS *lfuListTail;$/;"	m	struct:LFUCache	access:public
+LFUCacheCreate	LFUCache.h	/^int LFUCacheCreate(int capacity);$/;"	p	signature:(int capacity)
+LFUCacheFree	LFUCacheImpl.c	/^int LFUCacheFree(void *lfuCache)$/;"	f	signature:(void *lfuCache)
+LFUCacheGet	LFUCacheImpl.c	/^int LFUCacheGet(void *lfuCache,int key)$/;"	f	signature:(void *lfuCache,int key)
+LFUCachePrint	LFUCacheImpl.c	/^void LFUCachePrint(void *lfuCache)$/;"	f	signature:(void *lfuCache)
+LFUCacheSet	LFUCacheImpl.c	/^int LFUCacheSet(void *lfuCache int key,int value)$/;"	f	signature:(void *lfuCache int key,int value)
+LFUCahceCreate	LFUCache.h	/^int LFUCahceCreate(void *lfuCache);$/;"	p	signature:(void *lfuCache)
+LRUCacheGet	LFUCache.h	/^int LRUCacheGet(void *lruCache, int key);$/;"	p	signature:(void *lruCache, int key)
+LRUCachePrint	LFUCache.h	/^void LRUCachePrint(void *lruCache);$/;"	p	signature:(void *lruCache)
+LRUCacheSet	LFUCache.h	/^int LRUCacheSet(void *lruCache, int key, char value);$/;"	p	signature:(void *lruCache, int key, char value)
+__LFUCACHEIMPL_H__	LFUCacheImpl.h	6;"	d
+__LFUCACHE_H__	LFUCache.h	7;"	d
+cacheCapacity	LFUCacheImpl.h	/^	int cacheCapacity;$/;"	m	struct:LFUCache	access:public
+cacheEntryS	LFUCacheImpl.h	/^typedef struct cacheEntryS{$/;"	s
+cacheEntryS	LFUCacheImpl.h	/^}cacheEntryS;$/;"	t	typeref:struct:cacheEntryS
+cacheEntryS	tags	/^cacheEntryS	LFUCacheImpl.h	\/^typedef struct cacheEntryS{$\/;"	s$/;"	s	file:
+cacheEntryS::$	tags	/^cacheEntryS	LFUCacheImpl.h	\/^typedef struct cacheEntryS{$\/;"	s$/;"	m	struct:cacheEntryS	file:	access:public
+cacheEntryS::__anon1::$	tags	/^LFUCache	LFUCacheImpl.h	\/^typedef struct LFUCache{$\/;"	s$/;"	m	struct:cacheEntryS::__anon1	file:	access:public
+cacheEntryS::freq	LFUCacheImpl.h	/^	int freq;$/;"	m	struct:cacheEntryS	access:public
+cacheEntryS::hashListNext	LFUCacheImpl.h	/^	struct cacheEntryS *hashListNext;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+cacheEntryS::hashListPrev	LFUCacheImpl.h	/^	struct cacheEntryS *hashListPrev;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+cacheEntryS::key	LFUCacheImpl.h	/^	int key;$/;"	m	struct:cacheEntryS	access:public
+cacheEntryS::lfuListNext	LFUCacheImpl.h	/^	struct cacheEntryS *lfuListNext;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+cacheEntryS::lfuListPrev	LFUCacheImpl.h	/^	struct cacheEntryS *lfuListPrev;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+cacheEntryS::value	LFUCacheImpl.h	/^	int value;$/;"	m	struct:cacheEntryS	access:public
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v
+freeCacheEentry	LFUCacheImpl.c	/^static void freeCacheEentry(cacheEntryS *entry)$/;"	f	file:	signature:(cacheEntryS *entry)
+freeList	LFUCacheImpl.c	/^static void freeList(LFUCache *cache)$/;"	f	file:	signature:(LFUCache *cache)
+freeList	LFUCacheImpl.c	/^static void freeList(LFUCache *cache);$/;"	p	file:	signature:(LFUCache *cache)
+freq	LFUCacheImpl.h	/^	int freq;$/;"	m	struct:cacheEntryS	access:public
+getValueFromHashMap	LFUCacheImpl.c	/^static cacheEntryS *getValueFromHashMap(LFUCache *cache, int key) {$/;"	f	file:	signature:(LFUCache *cache, int key)
+hashKey	LFUCacheImpl.c	/^int hashKey(LFUCache *cache,int key)$/;"	f	signature:(LFUCache *cache,int key)
+hashListNext	LFUCacheImpl.h	/^	struct cacheEntryS *hashListNext;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+hashListPrev	LFUCacheImpl.h	/^	struct cacheEntryS *hashListPrev;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+hashmap	LFUCacheImpl.h	/^	cacheEntryS **hashmap;$/;"	m	struct:LFUCache	access:public
+insertToListHead	LFUCacheImpl.c	/^static cacheEntryS * insertToListHead(LFUCache *cache, cacheEntryS *entry) $/;"	f	file:	signature:(LFUCache *cache, cacheEntryS *entry)
+insertentryToHashMap	LFUCacheImpl.c	/^static void insertentryToHashMap(LFUCache* cache,cacheEntryS* entry )$/;"	f	file:	signature:(LFUCache* cache,cacheEntryS* entry )
+key	LFUCacheImpl.h	/^	int key;$/;"	m	struct:cacheEntryS	access:public
+lfuListHead	LFUCacheImpl.h	/^	cacheEntryS *lfuListHead;$/;"	m	struct:LFUCache	access:public
+lfuListNext	LFUCacheImpl.h	/^	struct cacheEntryS *lfuListNext;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+lfuListPrev	LFUCacheImpl.h	/^	struct cacheEntryS *lfuListPrev;$/;"	m	struct:cacheEntryS	typeref:struct:cacheEntryS::cacheEntryS	access:public
+lfuListSize	LFUCacheImpl.h	/^	int lfuListSize;$/;"	m	struct:LFUCache	access:public
+lfuListTail	LFUCacheImpl.h	/^	cacheEntryS *lfuListTail;$/;"	m	struct:LFUCache	access:public
+newCacheEntry	LFUCacheImpl.c	/^static cacheEntryS* newCacheEntry(int key,int value)$/;"	f	file:	signature:(int key,int value)
+removeEntryFromHashMap	LFUCacheImpl.c	/^static void removeEntryFromHashMap(LFUCache*cache,cacheEntryS *entry )$/;"	f	file:	signature:(LFUCache*cache,cacheEntryS *entry )
+removeFromList	LFUCacheImpl.c	/^static void removeFromList(LFUCache *cache, cacheEntryS *entry)$/;"	f	file:	signature:(LFUCache *cache, cacheEntryS *entry)
+testcase1	main.c	/^void testcase1(void)$/;"	f	signature:(void)
+updateLFUlist	LFUCacheImpl.c	/^static void updateLFUlist(LFUCache *cache,cacheEntryS * entry)$/;"	f	file:	signature:(LFUCache *cache,cacheEntryS * entry)
+value	LFUCacheImpl.h	/^	int value;$/;"	m	struct:cacheEntryS	access:public
